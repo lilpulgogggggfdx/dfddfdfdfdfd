@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  xmrig:
+    restart: always
+    hostname: xmrig
+    container_name: xmrig
+    build: ./
+    logging:
+      options:
+        max-size: 50m
+    privileged: true
